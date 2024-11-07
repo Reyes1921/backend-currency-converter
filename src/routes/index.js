@@ -5,7 +5,7 @@ import express from "express"
 
 const router = express.Router()
 
-router.get("/currencies", async (req, res) => {
+router.get(`/currencies/${process.env.URL_KEY}`, async (req, res) => {
   try {
     const data = await Currencies.findOne({main: process.env.DB_ID})
     res.json(data)
