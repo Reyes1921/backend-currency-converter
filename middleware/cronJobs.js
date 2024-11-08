@@ -35,6 +35,8 @@ const cronJob = async () => {
       } catch (error) {
         console.error("Error fetching exchange rates:", error)
       }
+    } else {
+      console.log("NOT TIME")
     }
   }
 
