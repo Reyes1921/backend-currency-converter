@@ -38,7 +38,8 @@ const cronJob = async () => {
     }
   }
 
-  cron.schedule("0 0 */12 * * *", checkAndUpdate)
+  cron.schedule("*/3 * * * *", checkAndUpdate)
+  // cron.schedule("0 0 */12 * * *", checkAndUpdate)
 }
 
 export default cronJob
