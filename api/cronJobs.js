@@ -1,6 +1,6 @@
 dotenv.config({path: "./.env"})
 import axios from "axios"
-import cron from "node-cron"
+// import cron from "node-cron"
 import Currencies from "../models/Currencies.js"
 import dotenv from "dotenv"
 
@@ -39,8 +39,8 @@ const cronJob = async () => {
       console.log("NOT TIME")
     }
   }
-
-  cron.schedule("*/3 * * * *", checkAndUpdate)
+  checkAndUpdate()
+  // cron.schedule("*/3 * * * *", checkAndUpdate)
   // cron.schedule("0 0 */12 * * *", checkAndUpdate)
 }
 
