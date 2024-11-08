@@ -1,7 +1,7 @@
 dotenv.config({path: "./.env"})
 import axios from "axios"
 // import cron from "node-cron"
-import Currencies from "../models/Currencies.js"
+import Currencies from "../../models/Currencies.js"
 import dotenv from "dotenv"
 
 const cronJob = async () => {

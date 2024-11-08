@@ -2,7 +2,7 @@ import dotenv from "dotenv"
 import express from "express"
 import connectDB from "./database/config.js"
 import indexRouter from "./src/routes/index.js"
-import cronJob from "./api/cronJobs.js"
+import cronJob from "./pages/api/cronJobs.js"
 import cors from "cors"
 dotenv.config({path: "./.env"})
 
