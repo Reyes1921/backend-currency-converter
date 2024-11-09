@@ -39,7 +39,7 @@ const cronJob = async () => {
       console.log("NOT TIME")
     }
   }
-
+  //ss
   cron.schedule("*/3 * * * *", checkAndUpdate)
   // cron.schedule("0 0 */12 * * *", checkAndUpdate)
 }
