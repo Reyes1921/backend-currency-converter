@@ -1,7 +1,8 @@
 dotenv.config({path: "./.env"})
-import axios from "axios"
 import Currencies from "../../models/Currencies.js"
 import dotenv from "dotenv"
+import express from "express"
+import axios from "axios"
 
 const router = express.Router()
 
