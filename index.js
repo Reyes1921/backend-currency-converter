@@ -4,6 +4,7 @@ import cors from "cors"
 import dotenv from "dotenv"
 import express from "express"
 import indexRouter from "./src/routes/index.js"
+import cronJob from "./src/routes/cron.js"
 
 connectDB()
 
@@ -13,7 +14,9 @@ app.use(cors())
 
 app.use(express.json())
 
-app.use("/api/cron", indexRouter)
+app.use("/api", indexRouter)
+
+app.use("/api", cronJob)
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
